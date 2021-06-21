@@ -1,0 +1,121 @@
+
+body
+{
+    background-color: #fffbf7;
+}
+
+/*Quitamos espacios entre el contenido de header
+    CLASS: LOGO, NAVBAR y DIV*/
+.header{
+
+    margin: 40px 20px 0px 20px;
+    padding: 0px;
+
+    /*Los espacios igual entran como elementos entonces
+    toman un lugar de espacio con inline-block*/
+    font-size: 0;
+
+    /*Quitar Background color*/
+    /*background-color: aqua;*/
+
+    height: 45px;
+
+}
+
+/*Ponemos el LOGO, NAVBAR y DIV como inline-Block para manipularlos y que sean 
+inline*/
+.header > *{
+
+    font-size: 16px;
+
+    display: inline-block;
+
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+
+    /*Reto 4 Todo elemento dentro de 
+    mi barra de navegación con Sans-serif*/
+    font-family: sans-serif;
+
+}
+
+/*Cuanto ocupara verticalmente el contenedor LOGO*/
+.logo
+{
+    width: 15%;
+}
+/*Para agrandar su altura*/
+.logo > img
+{
+    height: 100%;
+}
+
+/*Cuanto ocupara verticalmente el contenedor NavBar*/
+.navbar{
+
+    width: 70%;
+
+    /*Reto 3 left*/
+    text-align: center;
+    color: #025157;
+
+    /*Grueso de la letras*/
+    font-weight: 500;
+
+}
+
+
+
+/*Cuanto ocupara verticalmente el contenedor Actions*/
+.actions
+{
+    width: 15%;
+    /*Reto 3 left*/
+    text-align: right;
+
+    /*Reto 4 tamaño fuente de 14px*/
+    font-size: 14px;
+
+    /*Grueso de las letras
+    font-weight: 600;*/
+}
+
+.actions > *
+{
+    margin: 0px 10px;
+}
+
+.actions__a{
+    color: #67b54b;
+    text-decoration: none;
+}
+
+.actions__button
+{
+    color: white;
+    background-color: #67b54b;
+    padding: 12px 14px 12px 14px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.actions__button:hover
+{
+    background-color: rgb(94, 201, 243);
+}
+
+/*Mis elementos dentro de UL son LI*/
+.ulist > *{
+    display: inline;
+
+    /*Reto 4 separación costados 25px*/
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    
+}
+
+li > *{
+    color:#025157;
+    text-decoration: none;
+}
