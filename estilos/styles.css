@@ -1,4 +1,38 @@
 
+.headerfixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+#container
+{
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    gap:5%;
+    padding-top: 800px;
+}
+
+.container__video
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.publicidad__encabezado
+{
+    color: red;
+}
+
+.publicidad__parrafo
+{
+    color: blue;
+}
+
 body
 {
     background-color: #fffbf7;
