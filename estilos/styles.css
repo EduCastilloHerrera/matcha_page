@@ -1,7 +1,8 @@
 
 body
 {
-    background-color: #fffbf7;
+    /*fffbf7*/
+    background-color: rgb(255, 152, 152);
 }
 
 /*Quitamos espacios entre el contenido de header
