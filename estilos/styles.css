@@ -13,7 +13,6 @@
     width: 70%;
     margin: 100px auto;
     gap:5%;
-    padding-top: 800px;
 }
 
 .container__video
@@ -153,3 +152,141 @@ li > *{
     color:#025157;
     text-decoration: none;
 }
+
+/*Change color background Postwork*/
+
+.container__carouselCards
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a1d683;
+    height: 800px;
+}
+.container__carouselCards h2{
+    color: teal;
+    font-size: 3rem;
+}
+
+.container__carouselCards p{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.container__carouselCards button{
+    height: 60px;
+    width: 190px;
+    background-color: teal;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+  .slider {
+    width: 300px;
+    text-align: center;
+    /*Si mi elemento es más grande que su caja lo oculta/muestra/scroll*/
+    /*
+    overflow: scroll;
+    */
+  }
+  
+  /*Pone imágenes una detrás de otra*/
+  .slides {
+    display: flex;
+
+    /*Los elementos que no dan en la caja se vuelven invisibles, le dice commo reaccionar al desbordamiento*/
+    overflow-x: hidden;
+  }
+
+
+  .slides > div {
+
+    /*scroll-snap-align: start;*/
+    flex-shrink: 0; /*Que tanto se encogerá un elemento en relación de los demás elementos dentro del flex*/
+    
+    width: 300px;
+    height: 600px;
+    margin-right: 50px;
+    border-radius: 50px;
+    background: white;
+
+    /*Cada Div es un flexbox*/
+    /*Para las letras/números, solo los centro dentro de la caja*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+
+  }
+
+  .slider > a {
+    display: inline-flex;
+    width: 2rem;
+    height: 0.5rem;
+    background: white;
+    margin: 0.8rem 0;
+    position: relative;
+  }
+
+  .slider > a:focus {
+    background: #000;
+  }
+  
+
+
+  .container__image img
+  { 
+      margin-top: 0;
+      width: 300px;
+      max-height: 500px;
+      border: 2px solid #fff;
+  }
+  .container__image img.imagen
+  {
+    object-fit:fill;
+  }
+
+  .color__fondo > p{
+      font-size: 20px;
+  }
+
+
+  .color__fondo{
+      width: 300px;
+      height: 200px;
+      background-color: white;
+  }
+
+  .container__two__flexbox{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .container__branch__row
+  {
+      display: flex;
+      justify-content: start;
+      width: auto;
+      height: auto;
+
+  }
+  .container__branch__row2
+  {
+    display: flex;
+    justify-content: start;
+    width: auto;
+    height: auto;
+  }
+
+  .container__image__branch img
+  { 
+      margin-top: 0;
+      width: 160px;
+      height: 100px;
+  }
+  .container__image__branch img.imagen
+  {
+    object-fit:fill;
+  }
